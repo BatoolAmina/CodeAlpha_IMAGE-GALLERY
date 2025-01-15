@@ -1,0 +1,254 @@
+
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .gallery-container {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+  }
+  
+  .gallery {
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  #gallery-image {
+    max-width: 50%;
+    border-radius: 8px;
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Buttons */
+  button {
+    font-size: 24px;
+    width: 50px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .navbar {
+    width: 100%;
+    background-color: rgb(6, 6, 59);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .logo img{
+    height: 50px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin: 0 20px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    color: #f4f4f4;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .navbar-links li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .bottom-gallery {
+    width: 80%;
+    text-align: center;
+  }
+
+  .gallery-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 0 20px;
+  }
+  
+  .gallery-item {
+    flex-shrink: 0;
+    border-radius: 8px;
+  }
+  
+  .gallery-item img {
+    border-radius: 10px;
+    margin-top: 25px;
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+
+
+/* About */
+.about-container {
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    text-align: center;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 20px;
+  }
+  
+  .about-image {
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+  
+  .profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    width: 90%;
+    text-align: justify;
+    margin: 80px;
+    padding: 0;
+  }
+
+
+  /*Sign In */
+  .signin-container {
+    width: 20%;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .signin-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    background-color: rgb(0, 0, 31);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signin-btn:hover {
+    background-color: rgb(3, 3, 55);
+  }
+  
+  p {
+    font-size: 1rem;    
+    margin-top: 20px;
+  }
+  
+  p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
